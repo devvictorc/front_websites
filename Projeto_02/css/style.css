@@ -1,0 +1,263 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+
+html,
+body {
+	background-color: #9e9e9e;
+	height: 100%;
+}
+
+/*divs gerais*/
+.container {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+/*********/
+
+
+header {
+	background-color: rgb(220, 220, 220);
+	padding: 20px 2% 40px 2%;
+}
+
+.logo-1 {
+	float: left;
+	width: 160px;
+	height: 60px;
+	background-image: url(../images/logo1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+
+}
+
+.logo-2 {
+	float: right;
+	width: 160px;
+	height: 60px;
+	background-image: url(../images/logo2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.cover-form {
+	width: 100%;
+	padding: 0;
+}
+
+.bg {
+	position: relative;
+	height: 520px;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/bg-form.jpg);
+	background-repeat: no-repeat;
+}
+
+
+.form-container {
+	width: 400px;
+	margin-right: 40px;
+	position: absolute;
+	right: 10px;
+	top: -5%;
+	height: 110%;
+	background-color: rgba(217, 217, 217, 0.8);
+
+}
+
+.form-container h2 {
+	font-weight: none;
+	padding: 20px 15px;
+	font-size: 18px;
+	background-color: rgb(210, 210, 210);
+
+}
+
+.form-container form {
+	margin-top: 20px;
+	padding: 18px;
+}
+
+.form-container p {
+	font-size: 18px;
+	color: #525252;
+}
+
+.form-container form input[id="form"] {
+	width: 100%;
+	border: solid 1px grey;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+	outline: none;
+}
+
+.form-wraper:first-child {
+	margin-top: -20px;
+}
+
+
+.form-wraper:not(:first-child) {
+	margin-top: 35px;
+}
+
+.form-wraper input[type="submit"] {
+	width: 100%;
+	background-color: #1a4757;
+	height: 60px;
+	text-transform: uppercase;
+	font-size: 25px;
+	cursor: pointer;
+	color: white;
+}
+
+.form-wraper:last-child {
+	margin-top: 10px;
+}
+
+
+
+.chamada {
+	text-align: center;
+	width: 100%;
+
+}
+
+.icon-seta {
+	height: auto;
+	margin-bottom: -100%;
+	transform: translate(0, -100%);
+}
+
+.chamada h2 {
+	text-align: center;
+	width: 98%;
+	max-width: 700px;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: normal;
+	color: white;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.chamada p {
+	width: 98%;
+	max-width: 700px;
+	display: inline-block;
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+}
+
+section.chamada .container {
+	padding: 30px 0;
+	background-color: rgb(28, 68, 100)
+}
+
+
+.flex-mosaico {
+	display: flex;
+	background-color: #2d7e99;
+}
+
+.item-1-mosaico {
+	width: 60%;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.item-2-mosaico {
+	color: white;
+	padding: 50px;
+	width: 40%;
+}
+
+.description {
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 60px 20px;
+	background-color: cadetblue;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.description h3 {
+	padding: 10px 0 30px 0;
+}
+
+footer {
+	padding: 40px 0;
+	background-color: rgb(220, 220, 220);
+	text-align: center;
+
+}
+
+footer img {
+	margin-top: 30px;
+}
+
+@media screen and (max-width:960px) {
+	.bg {
+		text-align: center;
+		height: auto;
+		padding: 40px 0;
+	}
+
+	.form-container {
+		margin-right: 0;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width:510px) {
+
+	header {
+		text-align: center;
+	}
+
+	[class^="logo"] {
+		float: none;
+		margin: 0 auto;
+
+	}
+}
+
+@media (max-width:768px) {
+	.flex-mosaico {
+		display: block;
+	}
+
+	.item-1-mosaico,
+	.item-2-mosaico {
+		width: 100%;
+
+	}
+
+	.item-1-mosaico {
+		padding-top: 80%;
+	}
+
+
+}
